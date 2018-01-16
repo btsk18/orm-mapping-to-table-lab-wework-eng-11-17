@@ -12,7 +12,7 @@ class Student
   end
 
   def self.create_table
-    create_table_query = "IF NOT EXISTS CREATE TABLE students (
+    create_table_query = "CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       Name TEXT,
       Grade INTEGER
