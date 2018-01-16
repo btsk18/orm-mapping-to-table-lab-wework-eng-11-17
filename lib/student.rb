@@ -19,4 +19,7 @@ class Student
     );"
     DB[:conn].execute(create_table_query)
   end
+
+  def self.drop_table
+  end
 end
