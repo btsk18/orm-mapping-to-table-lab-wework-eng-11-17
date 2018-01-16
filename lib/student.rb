@@ -39,4 +39,5 @@ class Student
   end
 
   def create(name: nil, grade: nil)
+  end
 end
