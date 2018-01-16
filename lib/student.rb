@@ -21,5 +21,7 @@ class Student
   end
 
   def self.drop_table
+    drop_table_query = "DROP TABLE students"
+    DB[:conn].execute(drop_table_query)
   end
 end
