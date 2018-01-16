@@ -28,7 +28,9 @@ class Student
   end
 
   def save
-    save_query = "INSERT INTO students (name, grade) VALUES (?, ?)"
+    save_query = <<-SQL
+    INSERT INTO students (name, grade) VALUES (?, ?)
+    SQL
     DB[:conn].execute(save_query, @name, @grade)
   end
 end
