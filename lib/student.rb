@@ -15,8 +15,8 @@ class Student
     create_table_query = <<-SQL
     CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
-      Name TEXT,
-      Grade TEXT
+      name TEXT,
+      grade TEXT
     )
     SQL
     DB[:conn].execute(create_table_query)
