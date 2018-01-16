@@ -32,6 +32,7 @@ class Student
     INSERT INTO students (name, grade)
     VALUES (?, ?)
     SQL
+    binding.pry
     DB[:conn].execute(save_query, @name, @grade)
   end
 end
