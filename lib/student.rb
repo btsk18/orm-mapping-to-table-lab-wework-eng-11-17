@@ -26,6 +26,6 @@ class Student
   end
 
   def save
-    save_query = "INSERT INTO students (name, grade) "
+    save_query = "INSERT INTO students (name, grade) VALUES (?, ?) "
   end
 end
