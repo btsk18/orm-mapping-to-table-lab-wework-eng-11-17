@@ -15,7 +15,7 @@ class Student
     create_table_query = "CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       Name TEXT,
-      Grade INTEGER
+      Grade TEXT
     );"
     DB[:conn].execute(create_table_query)
   end
@@ -23,5 +23,9 @@ class Student
   def self.drop_table
     drop_table_query = "DROP TABLE students"
     DB[:conn].execute(drop_table_query)
+  end
+
+  def save
+    save_query = "INSERT INTO students (name, grade) "
   end
 end
